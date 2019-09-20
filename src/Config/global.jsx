@@ -12,6 +12,19 @@ const GLOBAL = {
     },
     SEARCH: {
       PLACEHOLDER: "Encontre seus comprovantes..."
+    },
+    BUTTON: {
+      OPTION1: "Depositar"
+    },
+    NAVBAR: {
+      OPTION1: "Inicio",
+      OPTION2: "Transferir",
+      OPTION3: "Pagar",
+      OPTION4: "Cartoes",
+      OPTION5: "Mais"
+    },
+    SEARCHBAR: {
+      TEXT: "Filtrar"
     }
   };
   

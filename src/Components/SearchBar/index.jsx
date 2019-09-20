@@ -2,8 +2,7 @@ import React from 'react'
 import './styles.css'
 import { Col, Row, Form } from 'react-bootstrap/'
 
-
-const SearchBar = ({ placeholder }) => {
+const SearchBar = ({ placeholder, text }) => {
     return (
         <Col xs={12} className="mb-5 mt-2">
             <Row className="ml-1 mr-1">
@@ -14,7 +13,7 @@ const SearchBar = ({ placeholder }) => {
                 <Col md={1} xs={2} className="text-center d-flex align-items-center">
                     <div>                        
                         <i className="fas fa-filter"></i>
-                        <a className="p-0 m-0">Filtrar</a>                       
+                        <p className="p-0 m-0">{text}</p>                       
                     </div>
                 </Col>
             </Row>
