@@ -1,0 +1,19 @@
+.btn-depositar {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .9rem;
+    border-radius: 28px;
+    text-decoration: none!important;
+    color: #263238;
+    position: relative;
+    bottom: 31px;
+}
+
+.btn-depositar p {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-depositar:hover {
+    color: #6a1b9a;
+}

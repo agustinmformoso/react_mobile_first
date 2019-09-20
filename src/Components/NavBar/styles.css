@@ -1,0 +1,14 @@
+.nav-link i {
+    color: #263238;
+    font-size: 1.8rem;
+}
+
+.nav-link p {
+    color: #263238;
+    font-size: .7rem;
+    margin: 0;
+}
+
+.nav-link :hover {
+    color: #6a1b9a;
+}

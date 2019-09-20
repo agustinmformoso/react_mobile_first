@@ -1,0 +1,14 @@
+.search-bar {
+    border: none;
+}
+
+.search-bar::placeholder {
+    color: #bdbdbd;
+    font-size: .9rem;
+}
+
+
+.search input[type="text"], textarea {
+    outline: none;
+    box-shadow:none !important;
+}

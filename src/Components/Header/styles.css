@@ -1,0 +1,19 @@
+.header {
+    background: rgb(74,20,140);
+    background: linear-gradient(90deg, rgba(74,20,140,1) 50%, rgba(171,71,188,1) 100%);
+    color: white;
+}
+
+.header img {
+    background-color: rgb(74,20,140);
+    border: 3px solid #e91e63;
+    padding: .2em;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}

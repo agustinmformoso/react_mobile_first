@@ -1,0 +1,36 @@
+
+
+.transaction-title {
+    font-size: .8rem;
+}
+
+.transaction-amount {
+    font-size: .8rem;
+}
+
+.transaction-description {
+    font-size: .9rem;
+    color: #37474F;
+}
+
+.transaction-day {
+    color: #37474F;
+}
+
+.icono {
+    width: 50px
+}
+
+.transaction-bill, .transaction-dollar {
+    background: linear-gradient(90deg, rgba(240,98,146,1) 50%, rgba(253,216,53,1) 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.transaction-arrow-up {
+    color: #69f0ae;
+}
+
+.transaction-arrow-down {
+    color: #ff4444;
+}
