@@ -1,27 +1,25 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Transactions from '../Transactions'
-import { GLOBAL } from '../../Config/global'
+import { TransactionsContext } from '../../Store/TransactionsContext';
+
 
 const TransactionList = () => {
+    const [transactions, setTransactions] = useContext(TransactionsContext);
+
     return (
         <div className="pl-2 pr-2 mb-5">
             <p className="ml-3 font-weight-bold">25/4/2019</p>
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION1} transaction_description="para José Corsino Dias" transaction_amount="-R$ 470,00" transaction_date="25 abr" transaction_type="deposito" arrow="down" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION2} transaction_description="CONTAS" transaction_amount="R$ 469,82" transaction_date="25 abr" transaction_type="transferencia" arrow="up" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION1} transaction_description="para José Corsino Dias" transaction_amount="-R$ 470,00" transaction_date="25 abr" transaction_type="deposito" arrow="down" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION2} transaction_description="CONTAS" transaction_amount="R$ 469,82" transaction_date="25 abr" transaction_type="transferencia" arrow="up" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION1} transaction_description="para José Corsino Dias" transaction_amount="-R$ 470,00" transaction_date="25 abr" transaction_type="deposito" arrow="down" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION2} transaction_description="CONTAS" transaction_amount="R$ 469,82" transaction_date="25 abr" transaction_type="transferencia" arrow="up" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION1} transaction_description="para José Corsino Dias" transaction_amount="-R$ 470,00" transaction_date="25 abr" transaction_type="deposito" arrow="down" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION2} transaction_description="CONTAS" transaction_amount="R$ 469,82" transaction_date="25 abr" transaction_type="transferencia" arrow="up" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION1} transaction_description="para José Corsino Dias" transaction_amount="-R$ 470,00" transaction_date="25 abr" transaction_type="deposito" arrow="down" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION2} transaction_description="CONTAS" transaction_amount="R$ 469,82" transaction_date="25 abr" transaction_type="transferencia" arrow="up" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION1} transaction_description="para José Corsino Dias" transaction_amount="-R$ 470,00" transaction_date="25 abr" transaction_type="deposito" arrow="down" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION2} transaction_description="CONTAS" transaction_amount="R$ 469,82" transaction_date="25 abr" transaction_type="transferencia" arrow="up" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION1} transaction_description="para José Corsino Dias" transaction_amount="-R$ 470,00" transaction_date="25 abr" transaction_type="deposito" arrow="down" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION2} transaction_description="CONTAS" transaction_amount="R$ 469,82" transaction_date="25 abr" transaction_type="transferencia" arrow="up" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION1} transaction_description="para José Corsino Dias" transaction_amount="-R$ 470,00" transaction_date="25 abr" transaction_type="deposito" arrow="down" />
-            <Transactions transaction_title={GLOBAL.TRANSACTIONS.OPTION2} transaction_description="CONTAS" transaction_amount="R$ 469,82" transaction_date="25 abr" transaction_type="transferencia" arrow="up" />
+            {transactions.map(t => (
+                <Transactions
+                    transaction_title={t.title}
+                    transaction_description={t.description}
+                    transaction_amount={t.amount}
+                    ransaction_date={t.date}
+                    transaction_type={t.type}
+                    arrow={t.arrow}
+                    key={t.id}
+                />
+            ))}
         </div>
     )
 }

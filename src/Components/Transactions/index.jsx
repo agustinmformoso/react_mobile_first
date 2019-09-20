@@ -3,7 +3,6 @@ import './styles.css'
 import { Col } from 'react-bootstrap/'
 
 const Transactions = ({ transaction_title, transaction_description, transaction_amount, transaction_date, transaction_type, arrow }) => {
-
     return (
         <Col xs={12} className="transaction d-flex justify-content-between align-items-center mb-2 p-0 shadow-sm">
             <div className="d-flex justify-content-left mt-2">
