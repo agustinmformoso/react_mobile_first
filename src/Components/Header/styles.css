@@ -2,6 +2,9 @@
     background: rgb(74,20,140);
     background: linear-gradient(90deg, rgba(74,20,140,1) 50%, rgba(171,71,188,1) 100%);
     color: white;
+    position: relative;
+    overflow: hidden;
+    transition: 5s;
 }
 
 .header img {
@@ -29,5 +32,11 @@
 }
 
 .hideElement {
-    display: none;
+    height: 219px;
+    transition: 1s;
+}
+
+.showElement {
+    height: 403px;
+    transition: 1s;
 }
