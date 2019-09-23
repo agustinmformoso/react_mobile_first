@@ -7,12 +7,12 @@ import { TransactionsProvider } from '../../Store/TransactionsContext'
 import profile_picture from '../../Resources/Images/duko.jpg'
 
 const Home = () => {
-    return (
+    return (        
         <TransactionsProvider>
             <Container fluid={true} className="p-0 m-0">
                 <Row className="p-0 m-0">
                     <Col xs={12} className="p-0 m-0">
-                        <Header amount="R$ 0,14" roundedCircle={true} width="100" interval={null} profile_picture={profile_picture} />
+                        <Header roundedCircle={true} width="100" interval={false} profile_picture={profile_picture} />
                         <Col xs={12} className="d-flex justify-content-center">
                             <ButtonCustom block={false} variant="link" size="lg" btn_msg="depositar" className="btn-depositar bg-white shadow-sm px-5 py-3" />
                         </Col>

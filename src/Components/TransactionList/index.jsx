@@ -5,7 +5,6 @@ import { TransactionsContext } from '../../Store/TransactionsContext';
 
 const TransactionList = () => {
     const [transactions, setTransactions] = useContext(TransactionsContext);
-
     return (
         <div className="pl-2 pr-2 mb-5">
             <p className="ml-3 font-weight-bold">25/4/2019</p>

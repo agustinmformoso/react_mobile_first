@@ -17,3 +17,17 @@
     height: 10px;
     border-radius: 100%;
 }
+
+.hide-balance {
+    color: white;
+    text-decoration: none;
+}
+
+.hide-balance:hover {
+    color: #e91e63;
+    text-decoration: none;
+}
+
+.hideElement {
+    display: none;
+}

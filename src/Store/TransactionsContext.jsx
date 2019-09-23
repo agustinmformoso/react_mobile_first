@@ -85,7 +85,7 @@ export const TransactionsProvider = (props) => {
             date: '25 abr',
             arrow: 'up',
             id: 9
-        },
+        }
     ]);
     return (
         <TransactionsContext.Provider value={[transactions, setTransactions]}>
